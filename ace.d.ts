@@ -211,6 +211,7 @@ export namespace Ace {
     mergeUndoDeltas: true | false | 'always';
     behavioursEnabled: boolean;
     wrapBehavioursEnabled: boolean;
+    enableAutoIndent: boolean;
     autoScrollEditorIntoView: boolean;
     keyboardHandler: string;
     placeholder: string;
@@ -745,7 +746,7 @@ export namespace Ace {
     setFontSize(size: string): void;
     focus(): void;
     isFocused(): boolean;
-    flur(): void;
+    blur(): void;
     getSelectedText(): string;
     getCopyText(): string;
     execCommand(command: string | string[], args?: any): boolean;
